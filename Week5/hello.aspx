@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <h1>Hello</h1>
+    <h1>Hello!</h1>
 
     <div>
     <asp:label id="lblMessage" runat="server" cssClass="alert alert-info" Visible="false"></asp:label>
