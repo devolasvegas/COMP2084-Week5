@@ -16,6 +16,7 @@ namespace Week5
 
         protected void btnCalculate_Click(object sender, EventArgs e)
         {
+            try { 
             /* Get the amount from the text box
              * and save in a decimal-type variable 
              */
@@ -31,6 +32,11 @@ namespace Week5
             // display the results in the labels
             lblTip.Text = tipAmount.ToString("c");
             lblTotal.Text = total.ToString("c");
+            }
+            catch (Exception)
+            {
+                Response.Redirect("/error.aspx");
+            }
 
         }
     }
